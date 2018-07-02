@@ -2055,6 +2055,22 @@
     'name': 'meta.column-specials.latex'
   }
   {
+    'begin': '\\{'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.section.group.begin.tex.latex'
+    'end': '\\}'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.section.group.end.tex.latex'
+    'name': 'meta.group.braces.tex.latex'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
     'include': 'text.tex'
   }
 ]
