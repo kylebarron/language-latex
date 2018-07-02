@@ -17,6 +17,7 @@ based on http://keepachangelog.com/en/1.0.0/
 - Grammar for `comment` environment.
 
 ### Changed
+- Changed `'include': '$base'` to `'include': '$self'`. This improves highlighting when embedded in another grammar, such as Markdown.
 - Set 'softWrap' to be true by default in LaTeX files.
 - Changed inline math snippet from `$...$` to `\(...\)`.
 
