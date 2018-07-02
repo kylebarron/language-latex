@@ -82,7 +82,7 @@
     'name': 'meta.group.braces.tex'
     'patterns': [
       {
-        'include': '$base'
+        'include': '$self'
       }
     ]
   }
