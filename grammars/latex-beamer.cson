@@ -60,6 +60,22 @@
     'name': 'meta.function.frametitle.latex'
   }
   {
+    'begin': '\\{'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.section.group.begin.tex.latex.beamer'
+    'end': '\\}'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.section.group.end.tex.latex.beamer'
+    'name': 'meta.group.braces.tex.latex.beamer'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
     'include': 'text.tex.latex'
   }
 ]

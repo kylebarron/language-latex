@@ -68,6 +68,22 @@
     ]
   }
   {
+    'begin': '\\{'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.section.group.begin.tex.latex.memoir'
+    'end': '\\}'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.section.group.end.tex.latex.memoir'
+    'name': 'meta.group.braces.tex.latex.memoir'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
     'include': 'text.tex.latex'
   }
 ]
