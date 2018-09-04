@@ -67,8 +67,8 @@
       }
     ]
   }
-  # These two rules are repeated from `latex.cson` in order to support the use
-  # of `$self` instead of `$base`. The former allows for correct embedding of
+  # The following rule is repeated from `latex.cson` in order to support the use
+  # of `$self` instead of `$base`. This allows for correct embedding of
   # LaTeX rules within other grammars, for example Markdown.
   {
     'begin': '\\{'
@@ -80,27 +80,6 @@
       '0':
         'name': 'punctuation.section.group.end.tex.latex.memoir'
     'name': 'meta.group.braces.tex.latex.memoir'
-    'patterns': [
-      {
-        'include': '$self'
-      }
-    ]
-  }
-  {
-    'begin': '(?:\\s*)((\\\\)begin)(\\{)(\\w+[*]?)(\\})'
-    'captures':
-      '1':
-        'name': 'support.function.be.latex.memoir'
-      '2':
-        'name': 'punctuation.definition.function.latex.memoir'
-      '3':
-        'name': 'punctuation.definition.arguments.latex.memoir'
-      '4':
-        'name': 'variable.parameter.function.latex.memoir'
-      '5':
-        'name': 'punctuation.definition.arguments.latex.memoir'
-    'end': '((\\\\)end)(\\{)(\\4)(\\})(?:\\s*\\n)?'
-    'name': 'meta.function.environment.$4.latex.memoir'
     'patterns': [
       {
         'include': '$self'

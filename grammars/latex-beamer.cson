@@ -59,8 +59,8 @@
     'match': '((\\\\)frametitle)(\\{)(.*)(\\})'
     'name': 'meta.function.frametitle.latex'
   }
-  # These two rules are repeated from `latex.cson` in order to support the use
-  # of `$self` instead of `$base`. The former allows for correct embedding of
+  # The following rule is repeated from `latex.cson` in order to support the use
+  # of `$self` instead of `$base`. This allows for correct embedding of
   # LaTeX rules within other grammars, for example Markdown.
   {
     'begin': '\\{'
@@ -72,27 +72,6 @@
       '0':
         'name': 'punctuation.section.group.end.tex.latex.beamer'
     'name': 'meta.group.braces.tex.latex.beamer'
-    'patterns': [
-      {
-        'include': '$self'
-      }
-    ]
-  }
-  {
-    'begin': '(?:\\s*)((\\\\)begin)(\\{)(\\w+[*]?)(\\})'
-    'captures':
-      '1':
-        'name': 'support.function.be.latex.beamer'
-      '2':
-        'name': 'punctuation.definition.function.latex.beamer'
-      '3':
-        'name': 'punctuation.definition.arguments.latex.beamer'
-      '4':
-        'name': 'variable.parameter.function.latex.beamer'
-      '5':
-        'name': 'punctuation.definition.arguments.latex.beamer'
-    'end': '((\\\\)end)(\\{)(\\4)(\\})(?:\\s*\\n)?'
-    'name': 'meta.function.environment.$4.latex.beamer'
     'patterns': [
       {
         'include': '$self'
